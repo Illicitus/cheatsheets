@@ -4,7 +4,7 @@
 
 - error
     ```
-        Error from server (Forbidden): services is forbidden: User                "system:serviceaccount:default:default" cannot list services in the         namespace "kube-system"
+        Error from server (Forbidden): services is forbidden: User "system:serviceaccount:default:default" cannot list services in the namespace "kube-system"
     ```
 - decision
     try:
