@@ -16,9 +16,9 @@ data:
 
 If you want to secure your dashboard with Nginx basic auth you need to create secret:
 ```bash
-sh -c "echo -n '<username>:' >> basic_auth"
-sh -c "openssl passwd -apr1 >> basic_auth"
-kubectl create secret generic basic-auth-dashboard --from-file=basic_auth --namespace=kube-system
+sh -c "echo -n '<username>:' >> auth"
+sh -c "openssl passwd -apr1 >> auth"
+kubectl create secret generic basic-auth-dashboard --from-file=auth --namespace=kube-system
 ```
 
 After that you could create an `Ingress` object:
