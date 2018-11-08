@@ -18,7 +18,7 @@ To deliver your project to Kubernetes you need to have the next steps in your CI
 - Setup environment variables:
   - `KUBERNETES_CLUSTER` - cluster name
   - `KUBERNETES_API_SERVER` - IP address or domain name of the master node(with installed API server) with HTTPS(!) protocol
-  - `KUBERNETES_TOKEN` - get it by execute the `kubectl get secret` (search for `default-token-xxxxx`) and `kubectl describe secret default-token-xxxxx` (search for `token`)
+  - `KUBERNETES_TOKEN` - get it by execute the `kubectl get secret` (search for `ci-robot-token-xxxxx`) and `kubectl describe secret ci-robot-token-xxxxx` (search for `token`)
 
 
 - [Install Kubectl](/kubernetes/setup-machine-for-cluster-management.html#kubectl)
